@@ -26,7 +26,7 @@ app.get("/api/health", (_, res) => {
 });
 
 // Register API routes
-// import Routes from "@/modules/index.routes";
-// app.use("/api", Routes);
+import newsRouter from "@/routes/news.route";
+app.use("/api/news", newsRouter);
 
 export default app;
